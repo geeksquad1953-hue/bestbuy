@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuyFit | Tech, Home & Everyday Essentials</title>
+<style>
+:root{--blue:#064fbd;--blue2:#003b91;--yellow:#ffe000;--ink:#101d3a;--muted:#5e6b82;--line:#dce3ef;--pale:#f2f6fc;--white:#fff;--red:#c91d2e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}button,input,select{font:inherit}button,a{touch-action:manipulation}a{color:inherit;text-decoration:none}button{cursor:pointer}.top-note{background:#eef3fb;padding:7px 4%;text-align:right;font-size:12px;color:#394967}.main-head{background:var(--blue);color:#fff;padding:14px 4%;display:flex;gap:24px;align-items:center}.brand{font-size:30px;font-weight:900;letter-spacing:-1.5px;white-space:nowrap}.brand .fit{color:var(--yellow)}.brand-mark{color:var(--yellow);margin-right:7px}.search{display:flex;flex:1;max-width:760px}.search input{min-width:0;flex:1;padding:13px 15px;border:0;border-radius:5px 0 0 5px;outline-offset:2px}.search button{border:0;background:var(--yellow);padding:0 20px;border-radius:0 5px 5px 0;font-weight:bold;color:#111}.head-actions{display:flex;gap:17px;align-items:center;margin-left:auto}.head-actions button{background:transparent;border:0;color:white;font-weight:bold}.cart-count{display:inline-flex;align-items:center;justify-content:center;background:var(--yellow);color:#111;border-radius:50%;width:21px;height:21px;font-size:12px;margin-left:4px}.nav{display:flex;gap:25px;align-items:center;flex-wrap:wrap;background:var(--blue2);color:#fff;padding:12px 4%;font-size:14px}.nav a:hover{text-decoration:underline}.nav .ship{margin-left:auto}.page{max-width:1500px;margin:auto;padding:16px 2% 35px}.layout{display:grid;grid-template-columns:230px minmax(0,1fr) 255px;gap:16px;align-items:start}.categories-menu,.promo-side,.deals-side{border:1px solid var(--line);border-radius:7px;background:#fff}.categories-menu{padding:9px 0}.categories-menu h3{font-size:16px;margin:8px 14px 12px}.category-link{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:13px;cursor:pointer;border:0;background:white;width:100%;text-align:left;color:var(--ink)}.category-link:hover,.category-link.active{background:#edf4ff;color:var(--blue)}.category-link .emoji{width:24px;font-size:18px;text-align:center}.category-link .arrow{margin-left:auto;color:#73829a}.hero{min-height:315px;border-radius:8px;overflow:hidden;padding:35px 38px;color:#fff;background:radial-gradient(circle at 80% 40%,#2874d6 0,#0a438f 35%,#082c66 78%);display:flex;align-items:center;position:relative}.hero-copy{max-width:53%;position:relative;z-index:1}.eyebrow{font-size:14px;font-weight:bold;letter-spacing:.5px}.hero h1{font-size:clamp(30px,3.2vw,48px);line-height:1.04;margin:13px 0}.hero h1 span{color:var(--yellow)}.hero p{line-height:1.55;max-width:420px;color:#e4edff}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;border:0;border-radius:5px;font-weight:bold;background:var(--blue);color:white}.btn.yellow{background:var(--yellow);color:#111}.btn:hover{filter:brightness(.95)}.hero .btn{margin-top:8px}.hero-art{position:absolute;right:2%;bottom:5%;width:46%;height:82%;display:flex;align-items:center;justify-content:center;gap:5px}.hero-art .device{filter:drop-shadow(0 14px 12px #00133388);font-size:clamp(55px,7vw,100px)}.hero-art .device:nth-child(2){font-size:clamp(80px,10vw,145px)}.dots{position:absolute;bottom:12px;left:0;right:0;text-align:center;letter-spacing:7px;color:#fff}.promo-side{background:#e7f0ff;padding:22px 17px;border:0}.promo-side h2{font-size:27px;line-height:1.08;color:#0646a7;margin:0 0 18px}.promo-side h2 span{color:#e7a900}.benefit{display:flex;gap:10px;align-items:center;margin:16px 0;font-size:13px;color:#0646a7}.benefit b{display:block;color:#083c8b;margin-bottom:2px}.section{margin-top:20px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-bottom:12px}.section-head h2{font-size:21px;margin:0 0 3px}.section-head p{font-size:13px;color:var(--muted);margin:0}.link-button{border:0;background:transparent;color:var(--blue);font-size:13px;font-weight:bold}.popular{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.popular button{border:1px solid transparent;border-radius:6px;background:var(--pale);padding:12px 5px;min-width:0;color:var(--ink)}.popular button:hover{border-color:#8fb5f6;background:#e7f0ff}.popular .pic{font-size:36px;display:block;margin-bottom:7px}.popular span:last-child{font-size:12px;font-weight:bold}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.product{border:1px solid var(--line);border-radius:7px;padding:13px;min-width:0;display:flex;flex-direction:column;position:relative;background:#fff}.product:hover{box-shadow:0 5px 18px #092b5b14}.product .tag{position:absolute;top:9px;left:9px;background:var(--yellow);font-size:11px;font-weight:bold;padding:4px 6px;border-radius:3px}.product-image{height:125px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#f8faff,#edf3fc);border-radius:5px;font-size:68px;margin-bottom:11px}.product h3{font-size:14px;line-height:1.35;margin:0 0 7px}.stars{color:#edae00;font-size:13px;margin:0 0 7px}.stars small{color:var(--muted);margin-left:5px}.price{font-weight:800;color:var(--red);font-size:19px}.old-price{font-size:12px;color:var(--muted);text-decoration:line-through;margin-left:6px;font-weight:normal}.product .btn{width:100%;margin-top:auto;padding:9px;font-size:13px}.product .price-line{margin-bottom:12px}.deal-list{padding:12px}.deal{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.deal:last-child{border-bottom:0}.deal-image{height:65px;background:var(--pale);border-radius:4px;display:grid;place-items:center;font-size:38px}.deal h4{font-size:12px;line-height:1.35;margin:0 0 5px}.deal .price{font-size:16px}.save{display:inline-block;background:#e92737;color:white;border-radius:12px;font-size:10px;padding:3px 7px;margin-top:4px}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:var(--pale);border:1px solid var(--line);border-radius:8px;padding:19px;margin-top:18px}.trust{display:flex;align-items:center;gap:11px;padding:4px 8px}.trust .symbol{font-size:27px;color:var(--blue)}.trust b{font-size:13px}.trust p{font-size:12px;color:var(--muted);margin:4px 0 0}.newsletter{margin-top:18px;background:var(--blue);color:white;padding:22px;border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:18px}.newsletter h3{margin:0 0 5px}.newsletter p{margin:0;font-size:13px;color:#e4edff}.newsletter form{display:flex;gap:6px;max-width:480px;width:50%}.newsletter input{flex:1;min-width:0;padding:12px;border:0;border-radius:4px}.newsletter button{border:0;background:var(--yellow);border-radius:4px;padding:0 14px;font-weight:bold}.footer{background:#101c35;color:white;padding:32px 4%;margin-top:20px}.footer-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer p,.footer a{font-size:13px;color:#d5def0;line-height:1.7}.footer a{display:block;margin:5px 0}.footer h4{margin-top:0}.copyright{border-top:1px solid #35415a;margin-top:22px;padding-top:15px;font-size:12px;color:#c5d0e5}.notice{font-size:12px;color:var(--muted);margin-top:8px}.modal-backdrop{position:fixed;inset:0;background:#06132e99;display:none;align-items:center;justify-content:center;padding:15px;z-index:20}.modal-backdrop.open{display:flex}.modal{background:white;border-radius:10px;padding:24px;max-width:500px;width:100%;max-height:85vh;overflow:auto;box-shadow:0 20px 60px #0004}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h2{margin:0}.close{border:0;background:#eef2f8;border-radius:50%;width:32px;height:32px;font-size:20px}.cart-row{display:grid;grid-template-columns:1fr auto;gap:12px;border-bottom:1px solid var(--line);padding:13px 0}.cart-row p{font-size:13px;color:var(--muted);margin:4px 0}.qty{display:flex;gap:8px;align-items:center}.qty button{border:1px solid var(--line);background:white;border-radius:4px;width:28px;height:28px}.cart-total{display:flex;justify-content:space-between;font-weight:bold;font-size:18px;padding:18px 0}.form-field{display:block;margin:12px 0;font-size:13px;font-weight:bold}.form-field input{display:block;width:100%;padding:11px;margin-top:5px;border:1px solid var(--line);border-radius:5px}.empty{color:var(--muted);padding:20px 0;text-align:center}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#102344;color:white;padding:12px 18px;border-radius:6px;z-index:30;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}[hidden]{display:none!important}
+@media(max-width:1100px){.layout{grid-template-columns:190px minmax(0,1fr)}.right-column{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{min-height:290px}.promo-side h2{font-size:24px}}
+@media(max-width:720px){.main-head{flex-wrap:wrap;gap:12px;padding:12px 4%}.brand{font-size:27px}.search{order:3;flex-basis:100%;max-width:none}.head-actions{gap:10px}.nav{gap:16px;padding:11px 4%;font-size:13px}.nav .ship{display:none}.page{padding:12px 3% 25px}.layout{display:block}.left-column{display:none}.right-column{display:grid;grid-template-columns:1fr;margin-top:16px}.hero{min-height:300px;padding:25px 22px}.hero-copy{max-width:75%}.hero h1{font-size:34px}.hero-art{right:-6%;width:45%;opacity:.8}.hero-art .device{font-size:48px}.hero-art .device:nth-child(2){font-size:76px}.popular{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.popular .pic{font-size:29px}.popular span:last-child{font-size:10px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product{padding:9px}.product-image{height:105px;font-size:55px}.product h3{font-size:13px}.price{font-size:17px}.trust-row{grid-template-columns:1fr;gap:9px}.trust{border-bottom:1px solid var(--line);padding-bottom:10px}.trust:last-child{border-bottom:0}.newsletter{align-items:stretch;flex-direction:column}.newsletter form{width:100%;max-width:none}.footer-inner{grid-template-columns:1fr 1fr}.footer-inner>div:first-child{grid-column:1/-1}}
+@media(max-width:390px){.head-actions button{font-size:12px}.hero-copy{max-width:90%}.hero-art{opacity:.22;width:70%}.hero h1{font-size:30px}.popular{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head h2{font-size:19px}.footer-inner{grid-template-columns:1fr}.footer-inner>div:first-child{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="top-note">Welcome to BuyFit · Demo storefront · Prices shown in USD</div>
+<header class="main-head">
+  <a class="brand" href="#" aria-label="BuyFit home"><span class="brand-mark">🛒</span>Buy<span class="fit">Fit</span></a>
+  <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search for products, brands and more..." aria-label="Search products"><button aria-label="Search">⌕</button></form>
+  <div class="head-actions"><button id="accountBtn">♙ Account</button><button id="cartBtn">🛒 Cart <span class="cart-count" id="cartCount">0</span></button></div>
+</header>
+<nav class="nav">
+  <a href="#categories">☰ &nbsp; Shop All Categories</a><a href="#deals">Deals</a><a href="#featured">Featured</a><a href="#new">New Arrivals</a><a href="#support">Services</a><a href="#support">Support</a><span class="ship">🚚 &nbsp; Free shipping on demo orders over $35*</span>
+</nav>
+<main class="page">
+<div class="layout">
+<aside class="left-column">
+  <div class="categories-menu" id="categories"><h3>Shop by Category</h3>
+    <button class="category-link active" data-category="All"><span class="emoji">▦</span>All Products <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Computers"><span class="emoji">💻</span>Computers & Tablets <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Phones"><span class="emoji">📱</span>Phones & Wearables <span class="arrow">›</span></button>
+    <button class="category-link" data-category="TV"><span class="emoji">📺</span>TV & Home Theater <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Appliances"><span class="emoji">🧊</span>Appliances <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Gaming"><span class="emoji">🎮</span>Gaming <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Audio"><span class="emoji">🎧</span>Audio <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Smart Home"><span class="emoji">🏠</span>Smart Home <span class="arrow">›</span></button>
+    <button class="category-link" data-category="Cameras"><span class="emoji">📷</span>Cameras <span class="arrow">›</span></button>
+  </div>
+</aside>
+<div class="center-column">
+  <section class="hero">
+    <div class="hero-copy"><div class="eyebrow">TOP TECH. GREAT PRICES.</div><h1>Upgrade <span>Your Everyday</span></h1><p>Discover tech, home essentials and accessories picked for the way you live.</p><a class="btn yellow" href="#featured">Shop Featured Deals &nbsp; ›</a></div>
+    <div class="hero-art" aria-hidden="true"><span class="device">💻</span><span class="device">📺</span><span class="device">🎧</span></div><div class="dots">● ● ● ●</div>
+  </section>
+  <section class="section">
+    <div class="section-head"><div><h2>Shop Popular Categories</h2><p>Find the right tech for every part of your day.</p></div></div>
+    <div class="popular">
+      <button data-pick="Computers"><span class="pic">💻</span><span>Laptops & PCs</span></button>
+      <button data-pick="Phones"><span class="pic">📱</span><span>Phones</span></button>
+      <button data-pick="TV"><span class="pic">📺</span><span>TV & Theater</span></button>
+      <button data-pick="Appliances"><span class="pic">🧊</span><span>Appliances</span></button>
+      <button data-pick="Gaming"><span class="pic">🎮</span><span>Gaming</span></button>
+      <button data-pick="Audio"><span class="pic">🎧</span><span>Audio</span></button>
+      <button data-pick="Smart Home"><span class="pic">💡</span><span>Smart Home</span></button>
+      <button data-pick="Cameras"><span class="pic">📷</span><span>Cameras</span></button>
+    </div>
+  </section>
+  <section class="section" id="featured">
+    <div class="section-head"><div><h2 id="productHeading">Featured Products</h2><p id="productSubheading">Popular picks and everyday essentials.</p></div><button class="link-button" id="clearFilters">View All Products →</button></div>
+    <div class="product-grid" id="productGrid"></div><p class="empty" id="noResults" hidden>No products found. Try another search or category.</p>
+  </section>
+</div>
+<aside class="right-column">
+  <section class="promo-side"><h2>Save More<br>with Buy<span>Fit</span></h2>
+    <div class="benefit"><span>🚚</span><div><b>Free Shipping</b>On eligible demo orders</div></div>
+    <div class="benefit"><span>↻</span><div><b>Easy Returns</b>Review seller return terms</div></div>
+    <div class="benefit"><span>🛡️</span><div><b>Secure Checkout</b>Demo only — no payment taken</div></div>
+    <a class="btn yellow" href="#support">Learn More ›</a>
+  </section>
+  <section class="deals-side" id="deals"><div class="section-head" style="padding:14px 14px 0"><h2 style="font-size:18px">Today's Deals</h2><button class="link-button" id="dealsButton">View All</button></div><div class="deal-list" id="dealList"></div></section>
+</aside>
+</div>
+<section class="trust-row" id="support">
+  <div class="trust"><span class="symbol">🛡️</span><div><b>Shop with Confidence</b><p>Clear product information</p></div></div>
+  <div class="trust"><span class="symbol">🎧</span><div><b>Helpful Support</b><p>Answers when you need them</p></div></div>
+  <div class="trust"><span class="symbol">✓</span><div><b>Simple Shopping</b><p>Cart and order demo</p></div></div>
+</section>
+<section class="newsletter"><div><h3>Get the latest deals</h3><p>Sign up for the BuyFit demo newsletter.</p></div><form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Enter your email address" required aria-label="Email address"><button>Sign Up</button></form></section>
+<p class="notice">*BuyFit is an independent demo storefront. Product names, prices, discounts, ratings and shipping statements are illustrative, not live offers. No real orders or payments are processed.</p>
+</main>
+<footer class="footer"><div class="footer-inner">
+  <div><a class="brand" href="#">🛒 Buy<span class="fit">Fit</span></a><p>Your everyday destination for tech and home essentials. This is an independent demonstration website and is not affiliated with Best Buy.</p></div>
+  <div><h4>Shop</h4><a href="#categories">All Categories</a><a href="#featured">Featured Products</a><a href="#deals">Today's Deals</a></div>
+  <div><h4>Help & Info</h4><a href="#support">Customer Support</a><a href="#support">Shipping & Returns</a><a href="#support">Privacy & Terms</a></div>
+</div><div class="copyright">© <span id="year"></span> BuyFit Demo. All product listings and checkout interactions are illustrative.</div></footer>
+
+<div class="modal-backdrop" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="modal"><div class="modal-head"><h2 id="cartTitle">Your Cart</h2><button class="close" data-close="cartModal" aria-label="Close cart">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div><p class="notice">Demo checkout only. No payment information is collected.</p><button class="btn" style="width:100%" id="checkoutBtn">Continue to Demo Checkout</button></div></div>
+<div class="modal-backdrop" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountTitle"><div class="modal"><div class="modal-head"><h2 id="accountTitle">BuyFit Account</h2><button class="close" data-close="accountModal" aria-label="Close account">×</button></div><p>Create an account feature can be connected to Supabase in a production build. This demo does not collect or store passwords.</p><label class="form-field">Email address<input type="email" id="accountEmail" placeholder="you@example.com"></label><button class="btn" id="accountContinue">Continue (Demo)</button></div></div>
+<div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal"><div class="modal-head"><h2 id="checkoutTitle">Demo Checkout</h2><button class="close" data-close="checkoutModal" aria-label="Close checkout">×</button></div><p>This is a front-end demonstration. No real order will be placed and no payment details are requested.</p><div id="checkoutSummary"></div><button class="btn" style="width:100%" id="placeDemoOrder">Place Demo Order</button></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const products = [
+{id:1,name:'AeroView 55-inch 4K Smart TV',category:'TV',price:399.99,old:599.99,icon:'📺',rating:'4.7',reviews:1245,tag:'Best Seller'},
+{id:2,name:'Everyday 15-inch Laptop',category:'Computers',price:549.99,old:749.99,icon:'💻',rating:'4.6',reviews:892,tag:'Deal'},
+{id:3,name:'Nova Pro Smartphone 128GB',category:'Phones',price:799.99,old:899.99,icon:'📱',rating:'4.8',reviews:1103,tag:''},
+{id:4,name:'Wireless Noise-Canceling Headphones',category:'Audio',price:99.99,old:149.99,icon:'🎧',rating:'4.5',reviews:641,tag:'Save $50'},
+{id:5,name:'NextPlay Gaming Console',category:'Gaming',price:449.99,old:499.99,icon:'🎮',rating:'4.7',reviews:756,tag:''},
+{id:6,name:'French Door Refrigerator',category:'Appliances',price:1199.99,old:1399.99,icon:'🧊',rating:'4.4',reviews:318,tag:'Popular'},
+{id:7,name:'Smart Home Starter Kit',category:'Smart Home',price:79.99,old:109.99,icon:'💡',rating:'4.3',reviews:526,tag:'Deal'},
+{id:8,name:'Mirrorless Digital Camera',category:'Cameras',price:699.99,old:799.99,icon:'📷',rating:'4.6',reviews:402,tag:''},
+{id:9,name:'Compact Bluetooth Speaker',category:'Audio',price:39.99,old:59.99,icon:'🔊',rating:'4.4',reviews:733,tag:'Value Pick'},
+{id:10,name:'Tablet 11-inch Wi-Fi',category:'Computers',price:329.99,old:379.99,icon:'▭',rating:'4.5',reviews:504,tag:''},
+{id:11,name:'Smart Doorbell Camera',category:'Smart Home',price:129.99,old:159.99,icon:'🔔',rating:'4.2',reviews:284,tag:''},
+{id:12,name:'Washer & Dryer Set',category:'Appliances',price:899.99,old:1099.99,icon:'🧺',rating:'4.5',reviews:193,tag:'Bundle Deal'}
+];
+let selectedCategory='All', searchTerm='', cart={};
+const $=id=>document.getElementById(id);
+const money=n=>n.toLocaleString('en-US',{style:'currency',currency:'USD'});
+function visibleProducts(){return products.filter(p=>(selectedCategory==='All'||p.category===selectedCategory)&&(`${p.name} ${p.category}`.toLowerCase().includes(searchTerm.toLowerCase())));}
+function renderProducts(){
+ const list=visibleProducts(); $('productGrid').innerHTML='';
+ $('productHeading').textContent=selectedCategory==='All'?'Featured Products':selectedCategory+' Products';
+ $('productSubheading').textContent=searchTerm?`Search results for “${searchTerm}”`:'Popular picks and everyday essentials.';
+ $('noResults').hidden=list.length>0;
+ list.forEach(p=>{
+  const card=document.createElement('article');card.className='product';
+  card.innerHTML=`${p.tag?`<span class="tag">${p.tag}</span>`:''}<div class="product-image" aria-hidden="true">${p.icon}</div><h3></h3><div class="stars">★★★★★ <small>(${p.reviews.toLocaleString()})</small></div><div class="price-line"><span class="price">${money(p.price)}</span><span class="old-price">${money(p.old)}</span></div><button class="btn" data-add="${p.id}">Add to Cart</button>`;
+  card.querySelector('h3').textContent=p.name;
+  $('productGrid').appendChild(card);
+ });
+}
+function renderDeals(){
+ $('dealList').innerHTML=products.filter(p=>p.old-p.price>=40).slice(0,3).map(p=>`<div class="deal"><div class="deal-image">${p.icon}</div><div><h4>${p.name}</h4><div><span class="price">${money(p.price)}</span></div><span class="save">Save ${money(p.old-p.price)}</span><div><button class="link-button" data-add="${p.id}">Add to cart +</button></div></div></div>`).join('');
+}
+function renderCart(){
+ const entries=Object.entries(cart).filter(([,q])=>q>0);
+ $('cartCount').textContent=entries.reduce((sum,[,q])=>sum+q,0);
+ $('cartItems').innerHTML=entries.length?entries.map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `<div class="cart-row"><div><b>${p.icon} ${p.name}</b><p>${money(p.price)} each</p><div class="qty"><button data-qty="${id}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${q}</span><button data-qty="${id}" data-delta="1" aria-label="Increase quantity">+</button><button class="link-button" data-remove="${id}">Remove</button></div></div><b>${money(p.price*q)}</b></div>`}).join(''):'<div class="empty">Your cart is empty. Add a product to get started.</div>';
+ const total=entries.reduce((sum,[id,q])=>sum+products.find(p=>p.id===Number(id)).price*q,0);
+ $('cartSubtotal').textContent=money(total);
+ $('checkoutBtn').disabled=!entries.length;$('checkoutBtn').style.opacity=entries.length?1:.5;
+ $('checkoutSummary').textContent=`${entries.reduce((s,[,q])=>s+q,0)} item(s) · Subtotal ${money(total)}`;
+}
+function toast(message){$('toast').textContent=message;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2300)}
+function setCategory(category){selectedCategory=category;document.querySelectorAll('.category-link').forEach(b=>b.classList.toggle('active',b.dataset.category===category));renderProducts();$('featured').scrollIntoView({behavior:'smooth',block:'start'});}
+document.addEventListener('click',e=>{
+ const add=e.target.closest('[data-add]');if(add){const id=Number(add.dataset.add);cart[id]=(cart[id]||0)+1;renderCart();toast('Added to your cart');return;}
+ const cat=e.target.closest('[data-category]');if(cat){setCategory(cat.dataset.category);return;}
+ const pick=e.target.closest('[data-pick]');if(pick){setCategory(pick.dataset.pick);return;}
+ const qty=e.target.closest('[data-qty]');if(qty){const id=qty.dataset.qty;cart[id]=(cart[id]||0)+Number(qty.dataset.delta);if(cart[id]<=0)delete cart[id];renderCart();return;}
+ const remove=e.target.closest('[data-remove]');if(remove){delete cart[remove.dataset.remove];renderCart();return;}
+ const close=e.target.closest('[data-close]');if(close){$(close.dataset.close).classList.remove('open');return;}
+ if(e.target.classList.contains('modal-backdrop'))e.target.classList.remove('open');
+});
+$('searchForm').addEventListener('submit',e=>{e.preventDefault();searchTerm=$('searchInput').value.trim();selectedCategory='All';document.querySelectorAll('.category-link').forEach(b=>b.classList.toggle('active',b.dataset.category==='All'));renderProducts();$('featured').scrollIntoView({behavior:'smooth'});});
+$('searchInput').addEventListener('input',()=>{searchTerm=$('searchInput').value.trim();renderProducts();});
+$('clearFilters').addEventListener('click',()=>{selectedCategory='All';searchTerm='';$('searchInput').value='';document.querySelectorAll('.category-link').forEach(b=>b.classList.toggle('active',b.dataset.category==='All'));renderProducts();});
+$('dealsButton').addEventListener('click',()=>{selectedCategory='All';searchTerm='';$('searchInput').value='';renderProducts();$('featured').scrollIntoView({behavior:'smooth'});});
+$('cartBtn').addEventListener('click',()=>{$('cartModal').classList.add('open');renderCart();});
+$('accountBtn').addEventListener('click',()=>$('accountModal').classList.add('open'));
+$('accountContinue').addEventListener('click',()=>{const email=$('accountEmail').value.trim();if(!email||!email.includes('@')){toast('Enter a valid email address');return;}$('accountModal').classList.remove('open');toast('Demo only: account sign-in is not connected');});
+$('checkoutBtn').addEventListener('click',()=>{if(!Object.keys(cart).length)return;$('checkoutSummary').textContent=`${$('cartCount').textContent} item(s) · Subtotal ${$('cartSubtotal').textContent}`;$('cartModal').classList.remove('open');$('checkoutModal').classList.add('open');});
+$('placeDemoOrder').addEventListener('click',()=>{cart={};renderCart();$('checkoutModal').classList.remove('open');toast('Demo order complete — no payment was taken');});
+$('newsletterForm').addEventListener('submit',e=>{e.preventDefault();const email=$('newsletterEmail').value.trim();if(email){toast('Thanks! Newsletter signup is demo-only.');$('newsletterForm').reset();}});
+$('year').textContent=new Date().getFullYear();
+renderProducts();renderDeals();renderCart();
+</script>
+</body>
+</html>
